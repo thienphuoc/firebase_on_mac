@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "903853614382",
+    "firebase_url": "https://storiesvn-205210.firebaseio.com",
+    "project_id": "storiesvn-205210",
+    "storage_bucket": "storiesvn-205210.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903853614382:android:32d7c4bdc672f573",
+        "android_client_info": {
+          "package_name": "com.earlystart.android.monkeyjunior.story.vn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903853614382-t2ej1rhshogjtf7ks1rcav5b54ovvd6k.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "903853614382-t2ej1rhshogjtf7ks1rcav5b54ovvd6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4ZjdRMJAUwAs5sxIVvp3vC7FKqrvozKQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

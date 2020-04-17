@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TestFirebase-desktop' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TestFirebase-desktop
+# Add the Firebase pod for Google Analytics
+pod 'Firebase/Analytics'
+
+# Add the pods for any other Firebase products you want to use in your app
+# For example, to use Firebase Authentication and Firebase Realtime Database
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+
+end
+
+target 'TestFirebase-mobile' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TestFirebase-mobile
+
+end

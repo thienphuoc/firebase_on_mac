@@ -27,17 +27,29 @@
 
 #include "cocos2d.h"
 
+#include "firebase/app.h"
+#include "firebase/variant.h"
+#include "firebase/database/database_reference.h"
+#include "firebase/database.h"
+#include "firebase/database/listener.h"
+
 class HelloWorld : public cocos2d::Scene
 {
+protected:
+
+    ::firebase::database::Database *database;
+
 public:
     static cocos2d::Scene* createScene();
 
     virtual bool init();
     
-    // a selector callback
+    void firebaseInit();
+    
+    void retrieveData(std::function<void(bool success)> callback);
+    
     void menuCloseCallback(cocos2d::Ref* pSender);
     
-    // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
 };
 
