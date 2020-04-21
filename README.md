@@ -24,4 +24,4 @@ pod install
 
 3. If you want to reproduce bug , please take a look at the `"Signing & Capabilities"` tab. If we
 + remove the `"App Sanbox"` , all codes work correctly -> the helloword.png image will appear immediately in the center of the screen.
-+ add the `"App Sanbox"` -> The query takes a long time to respond   
++ add the `"App Sanbox"` -> The query takes a long time to respond (1 to 3 minutes) to return a response. You can see the code in HelloWord.cpp file   
