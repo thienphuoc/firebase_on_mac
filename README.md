@@ -6,9 +6,9 @@ Xcode : 11.3.1
 MacOS: 10.15.3 Catalina
 Firebase cpp sdk : 6.12
 
-Getting Started
+Installation
 ---------------
-1.cd to proj.ios_mac folder
+1.cd to `proj.ios_mac` folder
 
 ```
 pod install
