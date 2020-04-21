@@ -1,43 +1,44 @@
 {
   "project_info": {
-    "project_number": "903853614382",
-    "firebase_url": "https://storiesvn-205210.firebaseio.com",
-    "project_id": "storiesvn-205210",
-    "storage_bucket": "storiesvn-205210.appspot.com"
+    "project_number": "1061713363357",
+    "firebase_url": "https://onetconnectjunior.firebaseio.com",
+    "project_id": "onetconnectjunior",
+    "storage_bucket": "onetconnectjunior.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:903853614382:android:32d7c4bdc672f573",
+        "mobilesdk_app_id": "1:1061713363357:android:8478194ba457128d27af74",
         "android_client_info": {
-          "package_name": "com.earlystart.android.monkeyjunior.story.vn"
+          "package_name": "com.test.firebase"
         }
       },
       "oauth_client": [
         {
-          "client_id": "903853614382-t2ej1rhshogjtf7ks1rcav5b54ovvd6k.apps.googleusercontent.com",
-          "client_type": 3
-        },
-        {
-          "client_id": "903853614382-t2ej1rhshogjtf7ks1rcav5b54ovvd6k.apps.googleusercontent.com",
+          "client_id": "1061713363357-r9t4laqk85tgu2699katenu1ga91prgn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD4ZjdRMJAUwAs5sxIVvp3vC7FKqrvozKQ"
+          "current_key": "AIzaSyA3seuBce6gVKF4IEnwNny0yKroGDpyNDs"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061713363357-r9t4laqk85tgu2699katenu1ga91prgn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1061713363357-qi8hrsf9e6cffjf79483gqiu8j07aqj3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.test.firebase"
+              }
+            }
+          ]
         }
       }
     }

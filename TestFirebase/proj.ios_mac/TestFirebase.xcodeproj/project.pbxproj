@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0485701D244EA2FC0036BA4C /* google-services.json in Resources */ = {isa = PBXBuildFile; fileRef = 0485701C244EA2FC0036BA4C /* google-services.json */; };
 		04EC2BCA244808AA0002A9C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04EC2BC8244808AA0002A9C4 /* GoogleService-Info.plist */; };
 		04EC2BCB244808AA0002A9C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04EC2BC8244808AA0002A9C4 /* GoogleService-Info.plist */; };
 		1A88B2641FC3D9C9005C14AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A88B2631FC3D9C9005C14AE /* Images.xcassets */; };
@@ -101,6 +102,8 @@
 
 /* Begin PBXFileReference section */
 		0123E386F8A1DE36C02C28BE /* Pods_TestFirebase_desktop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFirebase_desktop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0485701C244EA2FC0036BA4C /* google-services.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "google-services.json"; path = "../Resources/google-services.json"; sourceTree = "<group>"; };
+		04EBC419244A39320048FCF9 /* TestFirebase-desktop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TestFirebase-desktop.entitlements"; sourceTree = "<group>"; };
 		04EC2BC8244808AA0002A9C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04EC2BDC24485C710002A9C4 /* libfirebase_app.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfirebase_app.a; path = ../../../../firebase_cpp_sdk/libs/darwin/universal/libfirebase_app.a; sourceTree = "<group>"; };
 		04EC2BDE24485C760002A9C4 /* libfirebase_analytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfirebase_analytics.a; path = ../../../../firebase_cpp_sdk/libs/darwin/universal/libfirebase_analytics.a; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0485701C244EA2FC0036BA4C /* google-services.json */,
+				04EBC419244A39320048FCF9 /* TestFirebase-desktop.entitlements */,
 				46880B8319C43A87006E1F66 /* Classes */,
 				46880B7519C43A67006E1F66 /* Resources */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
@@ -483,6 +488,7 @@
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
 				46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */,
 				46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */,
+				0485701D244EA2FC0036BA4C /* google-services.json in Resources */,
 				04EC2BCB244808AA0002A9C4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,6 +684,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = "TestFirebase-desktop.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4H6V2H44EF;
@@ -720,8 +727,6 @@
 					"\"$(SRCROOT)/../../../../firebase_cpp_sdk/libs/darwin/universal/libfirebase_analytics.a\"",
 					"\"$(SRCROOT)/../../../../firebase_cpp_sdk/libs/darwin/universal/libfirebase_app.a\"",
 					"\"$(SRCROOT)/../../../../firebase_cpp_sdk/libs/darwin/universal/libfirebase_database.a\"",
-					"/usr/local/Cellar/openssl@1.1/1.1.1d/lib/libssl.a",
-					"/usr/local/Cellar/openssl@1.1/1.1.1d/lib/libcrypto.a",
 				);
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
@@ -736,6 +741,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = "TestFirebase-desktop.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4H6V2H44EF;
@@ -777,8 +783,6 @@
 					"\"$(SRCROOT)/../../../../firebase_cpp_sdk/libs/darwin/universal/libfirebase_analytics.a\"",
 					"\"$(SRCROOT)/../../../../firebase_cpp_sdk/libs/darwin/universal/libfirebase_app.a\"",
 					"\"$(SRCROOT)/../../../../firebase_cpp_sdk/libs/darwin/universal/libfirebase_database.a\"",
-					"/usr/local/Cellar/openssl@1.1/1.1.1d/lib/libssl.a",
-					"/usr/local/Cellar/openssl@1.1/1.1.1d/lib/libcrypto.a",
 				);
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";

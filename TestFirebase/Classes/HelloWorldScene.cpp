@@ -54,7 +54,7 @@ bool HelloWorld::init()
     
     retrieveData([=](bool i_result)
     {
-        // if retrieve success we will add hello world image to center of the screen.
+        // if retrieve success we will add helloworld.png image to center of the screen.
         
         Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
             
@@ -120,10 +120,7 @@ void HelloWorld::firebaseInit()
     #elif (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
        app = ::firebase::App::Create(::firebase::AppOptions());
     #else
-       auto opt_string = cocos2d::FileUtils::getInstance()->getStringFromFile("/Users/mac/Documents/GitHub/firebase_on_mac/TestFirebase/Resources/google-services.json");
-        
-        CCLOG("onCompletion callback:%s",opt_string);
-
+        auto opt_string = cocos2d::FileUtils::getInstance()->getStringFromFile("google-services.json");
        auto options = ::firebase::AppOptions::LoadFromJsonConfig(opt_string.c_str());
        app = ::firebase::App::Create(* options);
     #endif
@@ -136,18 +133,15 @@ void HelloWorld::retrieveData(std::function<void(bool success)> callback)
 {
     const int k_userID = 8899;
 
-    const std::string k_path = cocos2d::StringUtils::format("users/%d/%s/", k_userID, USER_REALTIME_VARIABLE);
+    const std::string k_path = cocos2d::StringUtils::format("users/%d/%s/", k_userID, USER_REALTIME_VARIABLE);//currently , on my database doesnt have a user 8899.
     
     firebase::database::DatabaseReference dbref = database->GetReference();
     
-    auto result = dbref.Child(k_path).GetValue();
-    
-    CCLOG("onCompletion callback");
-
-    
+    auto result = dbref.Child(k_path).GetValue();//The query takes a long time (1 to 3 minutes) to return a response.if the app sandbox in the signning & capacities tab added.
+        
     result.OnCompletion([callback](const firebase::Future<firebase::database::DataSnapshot>& result_data) {
         
-        CCLOG("onCompletion callback");
+        CCLOG("onCompletion callback");//(1 to 3 minutes)
         
         if (result_data.status() != firebase::kFutureStatusComplete)
         {
