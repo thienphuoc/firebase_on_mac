@@ -2,9 +2,11 @@
 
 The project works fine on :
 
+```
 Xcode : 11.3.1
 MacOS: 10.15.3 Catalina
 Firebase cpp sdk : 6.12
+```
 
 Installation
 ---------------
