@@ -24,4 +24,4 @@ pod install
 
 3. If you want to reproduce bug , please take a look at the `"Signing & Capabilities"` tab. If we
 + remove the `"App Sanbox"` , all codes work correctly -> the helloword.png image will appear immediately in the center of the screen.
-+ add the `"App Sanbox"` -> bug   
++ add the `"App Sanbox"` -> The query takes a long time to respond   
